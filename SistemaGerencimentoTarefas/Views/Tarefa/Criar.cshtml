@@ -1,0 +1,42 @@
+﻿@model SistemaGerenciamentoTarefas.Models.Tarefas
+
+@{
+    ViewData["Title"] = "Criar nova tarefa";
+}
+
+<h1> Criar Nova Tarefa</h1>
+
+<hr/>
+
+<div class="rool">
+    <div class="coll-md-4">
+        <form asp-action="Criar">
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Descricao" class="control-label"></label>
+                <input asp-for="Descricao" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Data" class="control-label"></label>
+                <input asp-for="Data" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Criar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<hr />
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
